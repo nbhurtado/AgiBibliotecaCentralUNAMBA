@@ -2,4 +2,4 @@
 Nilton Brayaam Hurtado Mendoza
 
 ## This is preview
-PHP - LARAVEL 5 - VOZ
+PHP - LARAVEL 5 - reconocimiento de voz
