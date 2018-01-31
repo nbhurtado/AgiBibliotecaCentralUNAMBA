@@ -8,5 +8,6 @@
     
         print "<script>window.location='index.php?view=autores';</script>";
 
-}
+	}
+	
 ?>
