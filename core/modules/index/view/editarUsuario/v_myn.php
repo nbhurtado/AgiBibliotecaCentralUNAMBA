@@ -3,7 +3,7 @@
   <div class="col-md-12">
 	<h1>Editar Usuario</h1>
 	<br>
-		<form class="form-horizontal" method="post" id="addproduct" action="index.php?view=ModificarUsuario" role="form">
+		<form class="form-horizontal" method="post" id="addproduct" action="index.php?view=actualizarUsuario" role="form">
 
 
   <div class="form-group">
@@ -49,27 +49,25 @@
   </div>
     </div>
   </div>
-
-
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label" >Es administrador</label>
     <div class="col-md-6">
-<div class="checkbox">
-    <label>
-      <input type="checkbox" name="es_admin" <?php if($usuario->es_admin){ echo "checked";}?>> 
-    </label>
-  </div>
+  <div class="checkbox">
+      <label>
+        <input type="checkbox" name="es_admin" <?php if($usuario->es_admin){ echo "checked";}?>> 
+      </label>
     </div>
-  </div>
-
-  <p class="alert alert-info">* Campos obligatorios</p>
-
-  <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-    <input type="hidden" name="id_usuario" value="<?php echo $usuario->id;?>">
-      <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+      </div>
     </div>
-  </div>
-</form>
-	</div>
+
+    <p class="alert alert-info">* Campos obligatorios</p>
+
+    <div class="form-group">
+      <div class="col-lg-offset-2 col-lg-10">
+      <input type="hidden" name="id_usuario" value="<?php echo $usuario->id;?>">
+        <button type="submit" class="btn btn-primary">Actualizar Usuario</button>
+      </div>
+    </div>
+  </form>
+    </div>
 </div>
