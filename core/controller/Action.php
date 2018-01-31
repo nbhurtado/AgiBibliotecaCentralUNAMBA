@@ -1,7 +1,7 @@
 <?php
 
 class Action {
-	public static function load($action){
+	public static function cargarAction($action){
 		
 		if(!isset($_GET['action'])){
 			include "core/modules/".Module::$module."/action/".$action."/a_myn.php";
