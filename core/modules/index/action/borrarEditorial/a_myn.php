@@ -1,7 +1,7 @@
 <?php
     //Segun se el editorial - libro, pertenezca a una categoria
-    $categoria = EditorialData::getById($_GET["id"]);
-    $categoria -> borrar();
+    $editorial = EditorialData::getById($_GET["id"]);
+    $editorial -> borrar();
     Core::redir("./index.php?view=editoriales");
 
 ?>
