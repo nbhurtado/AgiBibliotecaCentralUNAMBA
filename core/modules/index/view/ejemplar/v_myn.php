@@ -26,7 +26,7 @@ $libro = DatosLibro::getById($_GET["id"]);
 				?>
 				<tr>
 				<td><?php echo $ejemplar->codigo; ?></td>
-				<td><?php echo $ejemplar->getStatus()->nombre; ?></td>
+				<td><?php echo $ejemplar->getEstado()->nombre; ?></td>
 				<td style="width:200px;">
 					<a href="index.php?view=historialEjemplar&id=<?php echo $ejemplar->id;?>" class="btn btn-default btn-xs">Historial</a>
 					<a href="index.php?view=editarEjemplar&id=<?php echo $ejemplar->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=borrarEjemplar&id=<?php echo $ejemplar->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>

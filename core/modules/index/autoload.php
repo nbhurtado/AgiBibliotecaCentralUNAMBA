@@ -1,13 +1,13 @@
 <?php
 // esta funcion elimina el hecho de estar agregando los modelos manualmente
 
-function __autoload($nombremodelo){
-	if(Model::exists($nombremodelo)){
-		include Model::getFullPath($nombremodelo);
+function __autoload($modelname){
+	if(Model::exists($modelname)){
+		include Model::getFullPath($modelname);
 	} 
 
-	if(Form::exists($nombremodelo)){
-		include Form::getFullPath($nombremodelo);
+	if(Form::exists($modelname)){
+		include Form::getFullPath($modelname);
 	}
 }
 ?>

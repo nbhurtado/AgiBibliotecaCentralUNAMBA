@@ -2,24 +2,6 @@
 
 class Core {
 
-	/*public static function includeCSS(){
-		$path = "res/css/";
-		$handle=opendir($path);
-		if($handle){
-			while (false !== ($entry = readdir($handle)))  {
-				if($entry!="." && $entry!=".."){
-					$fullpath = $path.$entry;
-				if(!is_dir($fullpath)){
-						echo "<link rel='stylesheet' type='text/css' href='".$fullpath."' />";
-
-					}
-				}
-			}
-		closedir($handle);
-		}
-
-	}*/
-
 	public static function redir($url){
 		echo "<script>window.location='".$url."';</script>";
 	}

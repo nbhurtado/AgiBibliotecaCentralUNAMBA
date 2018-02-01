@@ -1,8 +1,8 @@
 <?php
 
     $ejemplar = DatosEjemplar::getById($_GET["id"]);
-    $id = $ejemplar->id_libro;
-    $ejemplar -> borrar();
-    Core::redir("./index.php?view=ejemplares&id=$id_libro");
+    $id_libro = $ejemplar->id_libro;
+    $ejemplar->borrar();
+    Core::redir("./index.php?view=ejemplar&id=$id_libro");
 
 ?>

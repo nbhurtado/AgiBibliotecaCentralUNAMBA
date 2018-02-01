@@ -5,7 +5,7 @@
 		$usuario -> nombre = $_POST["nombre"];
 		$usuario -> apellidos = $_POST["apellidos"];
 		$usuario -> editar();
-		print "<script>window.location='index.php?view=autores';</script>";
+		print "<script>window.location='index.php?view=autor';</script>";
 	}
 
 ?>

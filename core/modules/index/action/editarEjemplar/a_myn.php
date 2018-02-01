@@ -7,7 +7,7 @@
         $usuario -> editar();
 
         Core::alert("Actualizado exitosamente!");
-        print "<script>window.location='index.php?view=ejemplares&id=$usuario->id_libro';</script>";
+        print "<script>window.location='index.php?view=ejemplar&id=$usuario->id_libro';</script>";
 
 
     }

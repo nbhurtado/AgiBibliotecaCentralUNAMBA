@@ -1,6 +1,6 @@
 <?php
 $ejemplar = DatosEjemplar::getById($_GET["id"]);
-$libro = $ejemplar->getBook();
+$libro = $ejemplar->getLibro();
 ?>
 <div class="row">
 	<div class="col-md-12">
@@ -8,7 +8,7 @@ $libro = $ejemplar->getBook();
 <br>
 <form class="form-horizontal" role="form">
 <input type="hidden" name="view" value="historialEjemplar">
-<input type="hidden" name="id" value="<?php echo $item->id; ?>">
+<input type="hidden" name="id" value="<?php echo $ejemplar->id; ?>">
   <div class="form-group">
     <div class="col-lg-3">
 		<div class="input-group">
@@ -35,7 +35,7 @@ if($_GET["fecha_inicio"]<$_GET["fecha_inicio"]){
 $historial = DatosPrestramo::getAllByItemIdAndRange($ejemplar->id,$_GET["fecha_inicio"],$_GET["fecha_fin"]);
 }
 }else{
-$historial = DatosPrestramo::getAllByItemId($ejemplar->id);
+$historial = DatosPrestamo::getAllByItemId($ejemplar->id);
 
 }
 if(count($historial)>0){

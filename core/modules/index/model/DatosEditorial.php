@@ -24,7 +24,7 @@ class DatosEditorial {
 	}
 
 	public function editar(){
-		$sql = "update ".self::$tabla." set name=\"$this->name\" where id=$this->id";
+		$sql = "update ".self::$tabla." set nombre=\"$this->nombre\" where id=$this->id";
 		Executor::doit($sql);
 	}
 

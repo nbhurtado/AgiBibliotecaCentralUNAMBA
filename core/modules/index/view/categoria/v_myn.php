@@ -22,7 +22,7 @@
 				?>
 				<tr>
 				<td><?php echo $categoria->nombre; ?></td>
-				<td style="width:130px;"><a href="index.php?view=editcategory&id=<?php echo $categoria->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=delcategory&id=<?php echo $categoria->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
+				<td style="width:130px;"><a href="index.php?view=editarCategoria&id=<?php echo $categoria->id;?>" class="btn btn-warning btn-xs">Editar</a> <a href="index.php?action=borrarCategoria&id=<?php echo $categoria->id;?>" class="btn btn-danger btn-xs">Eliminar</a></td>
 				</tr>
 				<?php
 

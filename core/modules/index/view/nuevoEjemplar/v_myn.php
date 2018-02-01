@@ -1,4 +1,4 @@
-<?php $libro = DatosLibro::getById($_GET["book_id"]); ?>
+<?php $libro = DatosLibro::getById($_GET["id_libro"]); ?>
 <div class="row">
 	<div class="col-md-12">
 	<h1><?php echo $libro->titulo; ?> <small>Nuevo Ejemplar</small></h1>

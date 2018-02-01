@@ -5,7 +5,7 @@
         $ejemplar = DatosEjemplar::getById($prestamo->id_ejemplar);
         $ejemplar->avaiable();
         $prestamo->finalizar();
-        Core::redir("./?view=prestamos");
+        Core::redir("./?view=prestamo");
     }
 
 ?>

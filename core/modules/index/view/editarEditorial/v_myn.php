@@ -1,4 +1,4 @@
-<?php $editorial = DatosEdiorial::getById($_GET["id"]);?>
+<?php $editorial = DatosEditorial::getById($_GET["id"]);?>
 <div class="row">
 	<div class="col-md-12">
 	<h1>Editar Editorial</h1>

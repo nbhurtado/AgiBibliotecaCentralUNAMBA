@@ -10,7 +10,7 @@
         $universitarios -> editar();
 
         Core::alert("Actualizado exitosamente!");
-        print "<script>window.location='index.php?view=universitarios';</script>";
+        print "<script>window.location='index.php?view=universitario';</script>";
 
 
     }

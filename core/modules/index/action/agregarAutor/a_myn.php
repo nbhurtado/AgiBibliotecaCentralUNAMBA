@@ -1,12 +1,12 @@
 <?php
 
     if(count($_POST)>0){
-	    $usuario = new DatosAutor();
-	    $usuario -> nombre = $_POST["nombre"];
-	    $usuario -> apellidos = $_POST["apellidos"];
-	    $usuario -> agregar();
+	    $autor = new DatosAutor();
+	    $autor -> nombre = $_POST["nombre"];
+	    $autor -> apellidos = $_POST["apellidos"];
+	    $autor -> agregar();
     
-        print "<script>window.location='index.php?view=autores';</script>";
+        print "<script>window.location='index.php?view=autor';</script>";
 
 	}
 	

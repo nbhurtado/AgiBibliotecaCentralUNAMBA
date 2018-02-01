@@ -1,11 +1,11 @@
 <?php
 
     if(count($_POST)>0){
-        $usuario = new DatosEditorial();
-        $usuario -> nombre = $_POST["nombre"];
-        $usuario -> agregar();
+        $editorial = new DatosEditorial();
+        $editorial -> nombre = $_POST["nombre"];
+        $editorial -> agregar();
 
-        print "<script>window.location='index.php?view=editoriales';</script>";
+        print "<script>window.location='index.php?view=editorial';</script>";
     }
 
 ?>

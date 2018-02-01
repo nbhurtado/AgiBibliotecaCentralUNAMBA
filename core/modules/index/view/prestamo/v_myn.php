@@ -25,7 +25,7 @@ $(document).ready(function(){
 	$("#searchp").on("submit",function(e){
 		e.preventDefault();
 		
-		$.get("./?action=searchbook",$("#searchp").serialize(),function(data){
+		$.get("./?action=buscarLibro",$("#searchp").serialize(),function(data){
 			$("#show_search_results").html(data);
 		});
 		$("#product_code").val("");

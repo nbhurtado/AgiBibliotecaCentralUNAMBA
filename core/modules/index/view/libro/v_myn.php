@@ -24,7 +24,7 @@
 			</thead>
 			<?php
 			foreach($libros as $libro){
-				$categoria  = $libro->getCategory();
+				$categoria  = $libro->getCategoria();
 				?>
 				<tr>
 				<td><?php echo $libro->isbn; ?></td>
@@ -32,7 +32,7 @@
 				<td><?php echo $libro->subtitulo; ?></td>
 				<td><?php echo DatosEjemplar::countByBookId($libro->id)->c; ?></td>
 				<td><?php echo DatosEjemplar::countAvaiableByBookId($libro->id)->c; ?></td>
-				<td><?php if($category!=null){ echo $category->name; }  ?></td>
+				<td><?php if($categoria!=null){ echo $categoria->nombre; }  ?></td>
 				<td style="width:210px;">
 				<a href="index.php?view=ejemplar&id=<?php echo $libro->id;?>" class="btn btn-default btn-xs">Ejemplares</a>
 				<a href="index.php?view=editarLibro&id=<?php echo $libro->id;?>" class="btn btn-warning btn-xs">Editar</a>

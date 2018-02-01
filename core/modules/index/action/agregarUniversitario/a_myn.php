@@ -1,7 +1,7 @@
 <?php
 
     if(count($_POST)>0){
-        $universitarios = new DatosUniversitarios();
+        $universitarios = new DatosUniversitario();
         $universitarios -> nombre = $_POST["nombre"];
         $universitarios -> apellidos = $_POST["apellidos"];
         $universitarios -> direccion = $_POST["direccion"];
@@ -9,7 +9,7 @@
         $universitarios -> telefono = $_POST["telefono"];
         $universitarios -> agregar();
 
-        print "<script>window.location='index.php?view=universitarios';</script>";
+        print "<script>window.location='index.php?view=universitario';</script>";
 
 
     }

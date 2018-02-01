@@ -21,7 +21,7 @@
 
         }
 
-        print "<script>window.location='index.php?view=usuarios';</script>";
+        print "<script>window.location='index.php?view=usuario';</script>";
 
     }
 

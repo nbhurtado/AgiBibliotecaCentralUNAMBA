@@ -1,11 +1,11 @@
 <?php
 
 if(Session::getUID()!=""){
-		print "<script>window.location='index.php?view=home';</script>";
+		print "<script>window.location='index.php?view=calendario';</script>";
 }
 
 ?>
-<br><br><br><br><br>
+<br><br><br><br>
 <div class="row vertical-offset-100">
     	<div class="col-md-4 col-md-offset-4">
     	<?php if(isset($_COOKIE['contrasenha_actualizada'])):?>
@@ -16,15 +16,17 @@ if(Session::getUID()!=""){
     		</div>
     	<?php setcookie("contrasenha_actualizada","",time()-18600);
     	 endif; ?>
+
+		 
     		<div class="panel panel-primary">
 			  	<div class="panel-heading">
-			    	<h3 class="panel-title">Iniciar Sesion</h3>
+			    	<h3 class="panel-title">Acceder</h3>
 			 	</div>
 			  	<div class="panel-body">
 			    	<form accept-charset="UTF-8" role="form" method="post" action="index.php?view=procesoLogin">
                     <fieldset>
 			    	  	<div class="form-group">
-			    		    <input class="form-control" placeholder="Usuario" name="mail" type="text">
+			    		    <input class="form-control" placeholder="Usuario" name="usuario" type="text">	
 			    		</div>
 			    		<div class="form-group">
 			    			<input class="form-control" placeholder="Contraseña" name="contrasenha" type="password" value="">
@@ -36,4 +38,4 @@ if(Session::getUID()!=""){
 			</div>
 		</div>
 	</div>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>

@@ -1,13 +1,13 @@
 <?php
 
     if(count($_POST)>0){
-        $usuario = new DatosEjemplar();
-        $usuario -> codigo = $_POST["codigo"];
-        $usuario -> id_libro = $_POST["id_libro"];
-        $usuario -> id_estado = $_POST["id_estado"];
-        $usuario -> agregar();
+        $ejemplar = new DatosEjemplar();
+        $ejemplar -> codigo = $_POST["codigo"];
+        $ejemplar -> id_libro = $_POST["id_libro"];
+        $ejemplar -> id_estado = $_POST["id_estado"];
+        $ejemplar -> agregar();
 
-        print "<script>window.location='index.php?view=ejemplares&id=$_POST[id_libro]';</script>";
+        print "<script>window.location='index.php?view=ejemplar&id=$_POST[id_libro]';</script>";
 
 
     }

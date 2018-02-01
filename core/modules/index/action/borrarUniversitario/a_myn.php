@@ -2,6 +2,6 @@
 
     $universitarios = DatosUniversitarios::getById($_GET["id"]);
     $universitarios -> borrar();
-    Core::redir("./index.php?view=universitarios");
+    Core::redir("./index.php?view=universitario");
 
 ?>

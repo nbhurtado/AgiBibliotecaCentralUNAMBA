@@ -1,11 +1,11 @@
 <?php
 
     if(count($_POST)>0){
-        $usuario = new DatosCategoria();
-        $usuario -> nombre = $_POST["nombre"];
-        $usuario -> agregar();
+        $categoria = new DatosCategoria();
+        $categoria -> nombre = $_POST["nombre"];
+        $categoria -> agregar();
 
-        print "<script>window.location='index.php?view=categorias';</script>";
+        print "<script>window.location='index.php?view=categoria';</script>";
     }
 
 ?>

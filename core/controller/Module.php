@@ -9,7 +9,7 @@ class Module {
 		self::$module = $module;
 	}
 
-	public static function cargarLayout(){
+	public static function loadLayout(){
 		include "core/modules/".Module::$module."/view/layout.php";
 	}
 

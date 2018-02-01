@@ -42,14 +42,11 @@ class DatosUsuario {
 		return Model::one($query[0],new DatosUsuario());
 	}
 
-
-
 	public static function getAll(){
 		$sql = "select * from ".self::$tabla." order by created_at desc";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new DatosUsuario());
 	}
-
 
 	public static function getLike($q){
 		$sql = "select * from ".self::$tabla." where nombre like '%$q%' or apellidos like '%$q%'";

@@ -5,19 +5,19 @@
 <form class="form-horizontal" role="form">
 <input type="hidden" name="view" value="reportes">
   <div class="form-group">
-    <div class="col-lg-3">
+    <div class="col-lg-4">
 		<div class="input-group">
 		  <span class="input-group-addon">FECHA INICIO</span>
 		  <input type="date" name="fecha_inicio" value="<?php if(isset($_GET["fecha_inicio"]) && $_GET["fecha_inicio"]!=""){ echo $_GET["fecha_inicio"]; } ?>" class="form-control">
 		</div>
     </div>
-    <div class="col-lg-3">
+    <div class="col-lg-4">
 		<div class="input-group">
 		  <span class="input-group-addon">FECHA FIN</span>
 		  <input type="date" name="fecha_fin" value="<?php if(isset($_GET["fecha_fin"]) && $_GET["fecha_fin"]!=""){ echo $_GET["fecha_fin"]; } ?>" class="form-control">
 		</div>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-4">
     <button class="btn btn-primary btn-block">Procesar el Reporte</button>
     </div>
 

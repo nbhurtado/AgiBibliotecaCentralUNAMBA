@@ -9,7 +9,7 @@ $editorial = DatosEditorial::getAll();
 <div class="row">
 <div class="col-md-12">
 <h1><?php echo $libro->titulo; ?> <small>Editar libro</small></h1>
-<form class="form-horizontal" role="form" method="post" action="./?action=editarLibro" id="addbook">
+<form class="form-horizontal" role="form" method="post" action="./?action=editarLibro" id="id_libro">
   <div class="form-group">
     <label for="inputEmail1" class="col-lg-2 control-label">ISBN</label>
     <div class="col-lg-10">
@@ -75,8 +75,8 @@ $editorial = DatosEditorial::getAll();
     <div class="col-lg-10">
 <select name="id_autor" class="form-control">
 <option value="">-- SELECCIONE --</option>
-  <?php foreach($authors as $p):?>
-    <option value="<?php echo $p->id; ?>" <?php if($libro->id_autor!=null && $libro->id_autor==$p->id){ echo "selected"; }?>><?php echo $p->name." ".$p->lastname; ?></option>
+  <?php foreach($autor as $p):?>
+    <option value="<?php echo $p->id; ?>" <?php if($libro->id_autor!=null && $libro->id_autor==$p->id){ echo "selected"; }?>><?php echo $p->nombre." ".$p->apellidos; ?></option>
   <?php endforeach; ?>
 </select>
     </div>

@@ -3,8 +3,8 @@
 class Executor {
 
 	public static function doit($sql){
-		$conexion = Database::getCon();
-		return array($con->query($sql),$conexion->insert_id);
+		$conexion = Database::getConectar();
+		return array($conexion->query($sql),$conexion->insert_id);
 	}
 }
 ?>

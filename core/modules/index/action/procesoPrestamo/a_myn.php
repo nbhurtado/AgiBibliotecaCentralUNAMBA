@@ -26,7 +26,7 @@
 		}
 	}
 	if($iniciar){
-		print "<script>window.location='index.php?view=prestamos';</script>";
+		print "<script>window.location='index.php?view=prestamo';</script>";
 	}else{
 		print "<script>alert('Rango de fecha no es valido.');</script>";
 		print "<script>window.location='index.php?view=prestamo';</script>";

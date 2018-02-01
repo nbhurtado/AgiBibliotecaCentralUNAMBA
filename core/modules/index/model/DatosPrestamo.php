@@ -8,8 +8,8 @@ class DatosPrestamo {
 		$this->created_at = "NOW()";
 	}
 
-	public function getEjemplar(){ return ItemData::getById($this->id_ejemplar); }
-	public function getUniversitario(){ return ClientData::getById($this->id_universitario); }
+	public function getEjemplar(){ return DatosEjemplar::getById($this->id_ejemplar); }
+	public function getUniversitario(){ return DatosUniversitario::getById($this->id_universitario); }
 
     //CRUD para la tabla PRESTAMO
 	public function agregar(){
@@ -68,13 +68,13 @@ class DatosPrestamo {
 	}
 
 	public static function getAllByItemId($id){
-		$sql = "select * from ".self::$tabla." where item_id=$id";
+		$sql = "select * from ".self::$tabla." where id_ejemplar=$id";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new DatosPrestamo());
 	}
 
 	public static function getAllByItemIdAndRange($id,$inicio,$fin){
-		$sql = "select * from ".self::$tabla." where item_id=$id and ((fecha_retorno>=\"$inicio\" and fecha_retorno<=\"$finish\") or (fecha_inicio>=\"$inicio\" and fecha_inicio<=\"$fin\") or (fecha_fin>=\"$inicio\" and fecha_fin<=\"$fin\")) ";
+		$sql = "select * from ".self::$tabla." where id_ejemplar=$id and ((fecha_retorno>=\"$inicio\" and fecha_retorno<=\"$finish\") or (fecha_inicio>=\"$inicio\" and fecha_inicio<=\"$fin\") or (fecha_fin>=\"$inicio\" and fecha_fin<=\"$fin\")) ";
 		$query = Executor::doit($sql);
 		return Model::many($query[0],new DatosPrestamo());
 	}

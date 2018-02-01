@@ -12,7 +12,7 @@
             $usuario -> password = sha1(md5($_POST["password"]));
             $usuario -> agregar();
 
-    print "<script>window.location='index.php?view=usuarios';</script>";
+    print "<script>window.location='index.php?view=usuario';</script>";
 
 
     }

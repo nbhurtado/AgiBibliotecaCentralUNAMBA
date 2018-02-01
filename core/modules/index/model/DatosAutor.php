@@ -9,7 +9,7 @@ class DatosAutor {
 	}
     //CRUD para la tabla AUTOR
 	public function agregar(){
-		$sql = "insert into author (nombre,apellidos) ";
+		$sql = "insert into autor (nombre,apellidos) ";
 		$sql .= "value (\"$this->nombre\",\"$this->apellidos\")";
 		return Executor::doit($sql);
 	}
@@ -22,8 +22,8 @@ class DatosAutor {
 		$sql = "delete from ".self::$tabla." where id=$this->id";
 		Executor::doit($sql);
 	}
-	public function update(){
-		$sql = "update ".self::$tabla." set nombre=\"$this->name\",apellidos=\"$this->apellidos\" where id=$this->id";
+	public function editar(){
+		$sql = "update ".self::$tabla." set nombre=\"$this->nombre\",apellidos=\"$this->apellidos\" where id=$this->id";
 		Executor::doit($sql);
 	}
 

@@ -5,7 +5,7 @@
         $usuario -> nombre = $_POST["nombre"];
         $usuario -> editar();
         Core::alert("Actualizado exitosamente!");
-        print "<script>window.location='index.php?view=editoriales';</script>";
+        print "<script>window.location='index.php?view=editorial';</script>";
 
     }
 

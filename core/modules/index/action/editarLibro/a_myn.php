@@ -15,7 +15,7 @@
 
 
     Core::alert("Actualizado exitosamente!");
-    print "<script>window.location='./index.php?view=libros';</script>";
+    print "<script>window.location='./index.php?view=libro';</script>";
 
     }
 

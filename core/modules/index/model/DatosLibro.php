@@ -34,7 +34,7 @@ class DatosLibro {
 	}
 
 	public function editar(){
-		$sql = "update ".self::$tabla." set title=\"$this->title\",subtitle=\"$this->subtitle\",isbn=\"$this->isbn\",description=\"$this->description\",n_pag=\"$this->n_pag\",year=\"$this->year\",category_id=$this->category_id,editorial_id=$this->editorial_id,author_id=$this->author_id where id=$this->id";
+		$sql = "update ".self::$tabla." set titulo=\"$this->titulo\",subtitulo=\"$this->subtitulo\",isbn=\"$this->isbn\",descripcion=\"$this->descripcion\",num_pag=\"$this->num_pag\",anho=\"$this->anho\",id_categoria=$this->id_categoria,id_editorial=$this->id_editorial,id_autor=$this->id_autor where id=$this->id";
 		Executor::doit($sql);
 	}
 

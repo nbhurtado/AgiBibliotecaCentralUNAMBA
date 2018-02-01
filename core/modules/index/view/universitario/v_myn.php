@@ -7,7 +7,7 @@
 <br>
 		<?php
 
-		$universitarios = DatosUniversitarios::getAll();
+		$universitarios = DatosUniversitario::getAll();
 		if(count($universitarios)>0){
 			// si hay usuarios
 			?>
